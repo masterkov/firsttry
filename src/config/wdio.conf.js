@@ -148,7 +148,11 @@ exports.config = {
         ],
         timeout: 60000
     },
-    reporter: [ 'spec'],
+    reporters: [['allure', {
+        outputDir: 'allure-results',
+        disableWebdriverStepsReporting: true,
+        disableWebdriverScreenshotsReporting: true,
+    }]],
 
     //
     // =====
