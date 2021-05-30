@@ -1,0 +1,21 @@
+{
+	"defaultSeverity": "error",
+	"extends": [
+		"tslint-config-airbnb"
+	],
+	"rules": {
+		"max-line-length": [false],
+		"typedef-whitespace": [
+			true,
+			{
+				"call-signature": "onespace",
+				"index-signature": "onespace",
+				"parameter": "onespace",
+				"property-declaration": "onespace",
+				"variable-declaration": "onespace"
+			}
+		],
+		"quotemark": [true, "double"],
+		"import-name": [ false]
+	}
+}

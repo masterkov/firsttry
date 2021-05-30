@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": [ "./*" ],
+      "src/*": ["./src/*"]
+    },
+    "types": ["node", "webdriverio/sync", "@wdio/mocha-framework"],
+  },
+  "include": [
+    "./src/**/*.ts"
+  ]
+}
