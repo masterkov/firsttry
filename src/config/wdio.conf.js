@@ -148,11 +148,15 @@ exports.config = {
         ],
         timeout: 60000
     },
-    reporters: [['allure', {
-        outputDir: 'allure-results',
-        disableWebdriverStepsReporting: true,
-        disableWebdriverScreenshotsReporting: true,
-    }]],
+    reporters: [
+        'dot',
+        ['junit', {
+            outputDir: './',
+            outputFileFormat: function(options) { // optional
+                return `results-${options.cid}.${options.capabilities}.xml`
+            }
+        }],
+],
 
     //
     // =====
