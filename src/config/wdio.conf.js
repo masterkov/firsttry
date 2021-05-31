@@ -151,7 +151,10 @@ exports.config = {
     reporters: [
         'dot',
         ['junit', {
-            outputDir: './',
+            outputDir: './results',
+            outputFileFormat: function(opts) {
+                return `results-${opts.cid}.xml`
+            }
         }],
 ],
 
