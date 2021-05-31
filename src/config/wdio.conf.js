@@ -152,9 +152,6 @@ exports.config = {
         'dot',
         ['junit', {
             outputDir: './',
-            outputFileFormat: function(options) { // optional
-                return `results-${options.cid}.${options.capabilities}.xml`
-            }
         }],
 ],
 
